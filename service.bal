@@ -24,7 +24,7 @@ resource function post risk(@http:Payload RiskRequest req) returns RiskResponse|
      
      RiskResponse resp = {
           // hasRisk is true if the country code of the IP address is not the specified country code.
-          hasRisk: geoResponse.country_code2 != "<Specify a country code of your choice>"
+          hasRisk: geoResponse.country_code2 != "LK"
      };
      return resp;
 }
