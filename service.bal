@@ -16,7 +16,7 @@ string country_code2;
 final string geoApiKey = "1cacb1dd1866484b916b3ce578e55ed9";
 
 service / on new http:Listener(8090) {
-resource function post risk(@http:Payload RiskRequest req) returns RiskResponse|error? {
+resource function post greeting(@http:Payload RiskRequest req) returns RiskResponse|error? {
 
      string ip = req.ip;
      http:Client ipGeolocation = check new ("https://api.ipgeolocation.io");
